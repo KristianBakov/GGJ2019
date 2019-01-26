@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
 
-	Animator character_animator;
+	private Animator character_animator;
 
 	float horizontal_move = 0f;
 
@@ -31,9 +31,10 @@ public class PlayerMovement : MonoBehaviour {
 	{	
 		horizontal_move = Input.GetAxisRaw("Horizontal") * run_speed;
 
+        character_animator.SetFloat("Speed", Mathf.Abs(horizontal_move));
 		character_animator.SetBool("Move", false);
 		character_animator.SetBool("Push", false);
-		character_animator.SetBool("Jump", false);
+		//character_animator.SetBool("Jump", false);
 
 		PlayerBoxCollision();
 
@@ -59,6 +60,10 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
+    public void OnLanding ()
+    {
+        character_animator.SetBool("Jump", false);
+    }
 	void FixedUpdate ()
 	{
 		controller.Move(horizontal_move * Time.fixedDeltaTime, crouch, jump);
