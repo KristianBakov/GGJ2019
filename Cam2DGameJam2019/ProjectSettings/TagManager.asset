@@ -6,6 +6,9 @@ TagManager:
   tags:
   - MainPlayer
   - MovableBox
+  - memory_paper1
+  - lava
+  - void
   layers:
   - Default
   - TransparentFX
