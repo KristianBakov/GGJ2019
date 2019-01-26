@@ -448,7 +448,13 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 70059955499408762, guid: 00d62bfb1d7e1dd498a8eaa326b279f8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 70059955499408762, guid: 00d62bfb1d7e1dd498a8eaa326b279f8, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 00d62bfb1d7e1dd498a8eaa326b279f8, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1124672962
@@ -745,22 +751,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4, y: 5.8599997}
-  m_Direction: 0
---- !u!70 &1433838994
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1433838987}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: e5485d8f08c566b418459257dd3de904, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.6299996, y: 5.8599997}
+  m_Size: {x: 2.72, y: 5.36}
   m_Direction: 0
 --- !u!1001 &1477396618
 Prefab:
