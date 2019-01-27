@@ -12,7 +12,7 @@ public class Shooter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        fireRate = 1.0f;
+        fireRate = 2.0f;
         nextFire = Time.time;
 	}
 	

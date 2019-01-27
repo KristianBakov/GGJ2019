@@ -30,5 +30,9 @@ public class Bullet : MonoBehaviour {
             Debug.Log("You Died");
             SceneManager.LoadScene(level);
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
