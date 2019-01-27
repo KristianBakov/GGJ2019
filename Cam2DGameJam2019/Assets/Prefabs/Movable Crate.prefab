@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4433177419431136}
   - component: {fileID: 212389990439153626}
   - component: {fileID: 50910747208797330}
-  - component: {fileID: 61285853598667854}
+  - component: {fileID: 58628023821212504}
   m_Layer: 0
   m_Name: Movable Crate
   m_TagString: MovableBox
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61285853598667854
-BoxCollider2D:
+--- !u!58 &58628023821212504
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,18 +75,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
-  m_EdgeRadius: 0
+  m_Radius: 0.08
 --- !u!212 &212389990439153626
 SpriteRenderer:
   m_ObjectHideFlags: 1
