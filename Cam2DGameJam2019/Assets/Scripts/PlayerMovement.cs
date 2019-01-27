@@ -41,7 +41,20 @@ public class PlayerMovement : MonoBehaviour {
 		if(Input.GetKey("d") || Input.GetKey("a"))
 		{
 			character_animator.SetBool("Move", true);
-		}
+            if (GetComponent<AudioSource>().isPlaying == false && character_animator.GetBool("Jump") == false)
+            {
+                if (character_animator.GetBool("Move") == true)
+                {
+                    GetComponent<AudioSource>().volume = Random.Range(0.8f, 1.0f);
+                    GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
+                    GetComponent<AudioSource>().Play();
+                }
+            }
+            if (character_animator.GetBool("Move") == false && GetComponent<AudioSource>().isPlaying == true)
+            {
+                GetComponent<AudioSource>().Pause();
+            }
+        }
 
 		if(Input.GetButtonDown("Jump"))
 		{
